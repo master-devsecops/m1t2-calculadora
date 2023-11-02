@@ -1,3 +1,8 @@
+import os
+
+nombre = os.getenv("NOMBRE", "CAL2024")
+
+
 # Función para sumar dos números
 def suma(a, b):
     return a + b
@@ -17,7 +22,7 @@ def division(a, b):
     return a / b
 
 while True:
-    print("Opciones:")
+    print("Opciones de la calculadora: " + nombre)
     print("1. Suma")
     print("2. Resta")
     print("3. Multiplicación")
